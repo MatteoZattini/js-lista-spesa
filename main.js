@@ -8,6 +8,20 @@ const lista = [
 
 console.log(lista)
 
-for (let i = 0; i < lista.length; i++) {
-    console.log(i)
+
+// for (let i = 0; i < lista.length; i++) {
+    //     const element = lista[i]
+    //     console.log(i, element)
+    // }
+
+const listaElelement = document.querySelector("ul")
+    
+let i = 0
+while ( i < lista.length ) {
+    i++;
+    const element = lista[i]
+    console.log(i, element)
+    const liElement = document.createElement("li")
+    liElement.innerText = element;
+    listaElelement.append(liElement);
 }
